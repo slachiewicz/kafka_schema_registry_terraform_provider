@@ -21,11 +21,6 @@ resource "schemaregistry_config" "schema_sample_from_string_config" {
   config  = "{\"compatibility\":\"FORWARD\"}"
 }
 
-// from file need review
-//resource "schemaregistry_subject" "schema_sample_from_file" {
-//  subject = "com.test.myapp.test-from-file"
-//  schema  = "${file("schema_sample.avro.json")}"
-//}
 
 resource "schemaregistry_config" "schema_sample_config_2" {
   subject = "com.test.myapp.test-from-string-2"
