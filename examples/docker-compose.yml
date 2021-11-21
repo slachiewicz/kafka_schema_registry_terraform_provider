@@ -36,7 +36,7 @@ services:
       - zoo1
 
   kafka-schema-registry:
-    image: confluentinc/cp-schema-registry:5.5.0
+    image: confluentinc/cp-schema-registry:5.0.0
     hostname: kafka-schema-registry
     ports:
       - "8081:8081"
