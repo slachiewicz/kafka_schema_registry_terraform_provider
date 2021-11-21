@@ -69,6 +69,7 @@ func resourceSubjectRead(d *schema.ResourceData, m interface{}) error {
 	}
 
 	if err2 == nil {
+		d.SetId(schemaResponse.Subject)
 		d.Set("subject", schemaResponse.Subject)
 		d.Set("schema", schemaResponse.Schema)
 	}

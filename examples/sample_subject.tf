@@ -18,11 +18,10 @@ resource "schemaregistry_subject" "schema_sample_from_string" {
 
 resource "schemaregistry_config" "schema_sample_from_string_config" {
   subject = "com.test.myapp.test-from-string"
-  config  = "{\"compatibility\":\"FORWARD\"}"
+  config  = "{\"compatibility\":\"BACKWARD\"}"
 }
-
 
 resource "schemaregistry_config" "schema_sample_config_2" {
   subject = "com.test.myapp.test-from-string-2"
-  config  = "{\"compatibility\":\"BACKWARD\"}"
+  config  = "{\"compatibility\":\"FORWARD\"}"
 }

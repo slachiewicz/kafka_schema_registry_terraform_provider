@@ -13,7 +13,6 @@ func resourceConfig() *schema.Resource {
 		Read:   resourceConfigRead,
 		Update: resourceConfigUpdate,
 		Delete: resourceConfigDelete,
-
 		Schema: map[string]*schema.Schema{
 			"subject": &schema.Schema{
 				Type:     schema.TypeString,
