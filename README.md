@@ -24,7 +24,7 @@ Have a look at the [examples directory](examples) for some use cases
 
 ## `schemaregistry_config` resource configuration
 - `subject` (string, required): The name of the subject to be created.
-- `config` (string, required): The schema of the subject that has to be created.
+- `config` (string, required): The configuration of the subject that has to be created.
 
 &nbsp;
 
