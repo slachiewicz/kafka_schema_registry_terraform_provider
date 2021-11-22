@@ -22,6 +22,12 @@ Have a look at the [examples directory](examples) for some use cases
 
 &nbsp;
 
+## `schemaregistry_config` resource configuration
+- `subject` (string, required): The name of the subject to be created.
+- `config` (string, required): The schema of the subject that has to be created.
+
+&nbsp;
+
 ## Installation
 
 There are two standard methods of installing this provider detailed [in Terraform's documentation](https://www.terraform.io/docs/configuration/providers.html#third-party-plugins). You can place the file in the directory of your .tf file in `terraform.d/plugins/{OS}_{ARCH}/` or place it in your home directory at `~/.terraform.d/plugins/{OS}_{ARCH}/`
