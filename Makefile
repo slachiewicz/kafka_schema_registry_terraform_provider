@@ -16,8 +16,8 @@ darwin_amd64:
 
 test:
 	go build -o terraform-provider-schemaregistry
-	mkdir -p ~/.terraform.d/plugins/github.com/francescop/schemaregistry/1.0.1/darwin_amd64
-	cp terraform-provider-schemaregistry ~/.terraform.d/plugins/github.com/francescop/schemaregistry/1.0.1/darwin_amd64/
+	mkdir -p ~/.terraform.d/plugins/github.com/luizportela/schemaregistry/1.0.1/darwin_amd64
+	cp terraform-provider-schemaregistry ~/.terraform.d/plugins/github.com/luizportela/schemaregistry/1.0.1/darwin_amd64/
 	cd examples; terraform init; terraform apply
 
 clean:
