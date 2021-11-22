@@ -16,6 +16,7 @@ func Provider() *schema.Provider {
       },
     ResourcesMap: map[string]*schema.Resource{
       "schemaregistry_subject": resourceSubject(),
+      "schemaregistry_config": resourceConfig(),
     },
     ConfigureFunc: configureProvider,
   }

@@ -16,8 +16,9 @@ darwin_amd64:
 
 test:
 	go build -o terraform-provider-schemaregistry
-	cp terraform-provider-schemaregistry ~/.terraform.d/plugins/
-	cd examples; terraform init; terraform apply -auto-approve
+	mkdir -p ~/.terraform.d/plugins/github.com/luizportela/schemaregistry/1.0.1/darwin_amd64
+	cp terraform-provider-schemaregistry ~/.terraform.d/plugins/github.com/luizportela/schemaregistry/1.0.1/darwin_amd64/
+	cd examples; terraform init; terraform apply
 
 clean:
 	cd examples; rm -rf .terraform; rm -f *.tfstate*
