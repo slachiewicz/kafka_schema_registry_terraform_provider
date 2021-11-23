@@ -1,7 +1,7 @@
 package restapi
 
 import (
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
 func make_client_schema(d *schema.ResourceData, m interface{}) (*schema_registry_client_schema, error) {

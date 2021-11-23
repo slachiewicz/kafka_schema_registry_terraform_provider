@@ -4,7 +4,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
 func resourceSubject() *schema.Resource {
@@ -23,6 +23,10 @@ func resourceSubject() *schema.Resource {
 			"schema": &schema.Schema{
 				Type:     schema.TypeString,
 				Required: true,
+				DiffSuppressFunc: func(k, old, new string, d *schema.ResourceData) bool {
+					oldString := "{\"type\":" + old + "}"
+					return oldString == new
+				},
 			},
 		},
 	}
