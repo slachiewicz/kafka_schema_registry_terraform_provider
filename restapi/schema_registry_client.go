@@ -128,8 +128,8 @@ func (client schema_registry_client_schema) read_config() (*schemaResponse, erro
 	var schemaResponse schemaResponse
 	json.Unmarshal([]byte(bodyString), &schemaResponse)
 
-	//log.Println("Body string:::::" + bodyString)
-	//log.Println("Body Json string:::::" + schemaResponse.Schema)
+	log.Println("Body string:::::" + bodyString)
+	log.Println("Body Json string:::::" + schemaResponse.Schema)
 
 	if response.StatusCode != http.StatusOK {
 		err = fmt.Errorf("response code is %d: %s", response.StatusCode, data)
